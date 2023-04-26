@@ -1,0 +1,448 @@
+Keys: 99,73,52,98,2,36,41
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 99,---,---,---,---,---,---,---,---,---,---] Inserting 99  Probes: 1
+[ 99,---,---,---,---,---,---, 73,---,---,---] Inserting 73  Probes: 1
+[ 99,---,---,---,---,---,---, 73, 52,---,---] Inserting 52  Probes: 1
+[ 99,---,---,---,---,---,---, 73, 52,---, 98] Inserting 98  Probes: 1
+[ 99,---,  2,---,---,---,---, 73, 52,---, 98] Inserting 2  Probes: 1
+[ 99,---,  2, 36,---,---,---, 73, 52,---, 98] Inserting 36  Probes: 1
+[ 99,---,  2, 36,---,---,---, 73, 52, 41, 98] Inserting 41  Probes: 2
+Inserted 7 values, 7 distinct in 48 ms
+Average no. of probes: 1.1428571428571428 Longest probe: 2
+Searching
+Successful search for 36 in 1 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 99,---,---,---,---,---,---,---,---,---,---] Inserting 99  Probes: 1
+[ 99,---,---,---,---,---,---, 73,---,---,---] Inserting 73  Probes: 1
+[ 99,---,---,---,---,---,---, 73, 52,---,---] Inserting 52  Probes: 1
+[ 99,---,---,---,---,---,---, 73, 52,---, 98] Inserting 98  Probes: 1
+[ 99,---,  2,---,---,---,---, 73, 52,---, 98] Inserting 2  Probes: 1
+[ 99,---,  2, 36,---,---,---, 73, 52,---, 98] Inserting 36  Probes: 1
+[ 99,---,  2, 36,---,---,---, 73, 52, 41, 98] Inserting 41  Probes: 2
+Inserted 7 values, 7 distinct in 7 ms
+Average no. of probes: 1.1428571428571428 Longest probe: 2
+Searching
+Successful search for 36 in 1 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 99,---,---,---,---,---,---,---,---,---,---] Inserting 99  Probes: 1
+[ 99,---,---,---,---,---,---, 73,---,---,---] Inserting 73  Probes: 1
+[ 99,---,---,---,---,---,---, 73, 52,---,---] Inserting 52  Probes: 1
+[ 99,---,---,---,---,---,---, 73, 52,---, 98] Inserting 98  Probes: 1
+[ 99,---,  2,---,---,---,---, 73, 52,---, 98] Inserting 2  Probes: 1
+[ 99,---,  2, 36,---,---,---, 73, 52,---, 98] Inserting 36  Probes: 1
+[ 99, 41,  2, 36,---,---,---, 73, 52,---, 98] Inserting 41  Probes: 3
+Inserted 7 values, 7 distinct in 6 ms
+Average no. of probes: 1.2857142857142858 Longest probe: 3
+Searching
+Successful search for 36 in 1 probes
+
+----------------------------------------------------------------------
+Keys: 66,98,88,32,50,17,30
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 66,---,---,---,---,---,---,---,---,---,---] Inserting 66  Probes: 1
+[ 66,---,---,---,---,---,---,---,---,---, 98] Inserting 98  Probes: 1
+[ 66, 88,---,---,---,---,---,---,---,---, 98] Inserting 88  Probes: 2
+[ 66, 88, 32,---,---,---,---,---,---,---, 98] Inserting 32  Probes: 4
+[ 66, 88, 32,---,---,---, 50,---,---,---, 98] Inserting 50  Probes: 1
+[ 66, 88, 32,---,---,---, 50, 17,---,---, 98] Inserting 17  Probes: 2
+[ 66, 88, 32,---,---,---, 50, 17, 30,---, 98] Inserting 30  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.7142857142857142 Longest probe: 4
+Searching
+Unsuccessful search for 89 in 3 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 66,---,---,---,---,---,---,---,---,---,---] Inserting 66  Probes: 1
+[ 66,---,---,---,---,---,---,---,---,---, 98] Inserting 98  Probes: 1
+[ 66, 88,---,---,---,---,---,---,---,---, 98] Inserting 88  Probes: 2
+[ 66, 88,---,---,---,---, 32,---,---,---, 98] Inserting 32  Probes: 3
+[ 66, 88,---,---,---,---, 32, 50,---,---, 98] Inserting 50  Probes: 2
+[ 66, 88, 17,---,---,---, 32, 50,---,---, 98] Inserting 17  Probes: 3
+[ 66, 88, 17,---,---,---, 32, 50, 30,---, 98] Inserting 30  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.8571428571428572 Longest probe: 3
+Searching
+Unsuccessful search for 89 in 6 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 66,---,---,---,---,---,---,---,---,---,---] Inserting 66  Probes: 1
+[ 66,---,---,---,---,---,---,---,---,---, 98] Inserting 98  Probes: 1
+[ 66,---,---,---,---,---,---,---,---, 88, 98] Inserting 88  Probes: 2
+[ 66,---, 32,---,---,---,---,---,---, 88, 98] Inserting 32  Probes: 2
+[ 66,---, 32,---,---,---, 50,---,---, 88, 98] Inserting 50  Probes: 1
+[ 66,---, 32, 17,---,---, 50,---,---, 88, 98] Inserting 17  Probes: 2
+[ 66,---, 32, 17,---,---, 50,---, 30, 88, 98] Inserting 30  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.4285714285714286 Longest probe: 3
+Searching
+Unsuccessful search for 89 in 1 probes
+
+----------------------------------------------------------------------
+Keys: 80,46,61,3,79,49,77
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---, 80,---,---,---,---,---,---,---] Inserting 80  Probes: 1
+[---,---, 46, 80,---,---,---,---,---,---,---] Inserting 46  Probes: 1
+[---,---, 46, 80,---,---, 61,---,---,---,---] Inserting 61  Probes: 1
+[---,---, 46, 80,  3,---, 61,---,---,---,---] Inserting 3  Probes: 2
+[---,---, 46, 80,  3, 79, 61,---,---,---,---] Inserting 79  Probes: 4
+[---,---, 46, 80,  3, 79, 61, 49,---,---,---] Inserting 49  Probes: 3
+[ 77,---, 46, 80,  3, 79, 61, 49,---,---,---] Inserting 77  Probes: 1
+Inserted 7 values, 7 distinct in 5 ms
+Average no. of probes: 1.8571428571428572 Longest probe: 4
+Searching
+Unsuccessful search for 20 in 1 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---, 80,---,---,---,---,---,---,---] Inserting 80  Probes: 1
+[---,---, 46, 80,---,---,---,---,---,---,---] Inserting 46  Probes: 1
+[---,---, 46, 80,---,---, 61,---,---,---,---] Inserting 61  Probes: 1
+[---,---, 46, 80,  3,---, 61,---,---,---,---] Inserting 3  Probes: 2
+[---,---, 46, 80,  3,---, 61,---,---, 79,---] Inserting 79  Probes: 3
+[---,---, 46, 80,  3, 49, 61,---,---, 79,---] Inserting 49  Probes: 1
+[ 77,---, 46, 80,  3, 49, 61,---,---, 79,---] Inserting 77  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.4285714285714286 Longest probe: 3
+Searching
+Unsuccessful search for 20 in 2 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---, 80,---,---,---,---,---,---,---] Inserting 80  Probes: 1
+[---,---, 46, 80,---,---,---,---,---,---,---] Inserting 46  Probes: 1
+[---,---, 46, 80,---,---, 61,---,---,---,---] Inserting 61  Probes: 1
+[---,---, 46, 80,---,---, 61,  3,---,---,---] Inserting 3  Probes: 2
+[---, 79, 46, 80,---,---, 61,  3,---,---,---] Inserting 79  Probes: 2
+[---, 79, 46, 80,---, 49, 61,  3,---,---,---] Inserting 49  Probes: 1
+[ 77, 79, 46, 80,---, 49, 61,  3,---,---,---] Inserting 77  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.2857142857142858 Longest probe: 3
+Searching
+Unsuccessful search for 20 in 1 probes
+
+----------------------------------------------------------------------
+Keys: 33,0,0,13,47,78,45
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 33,---,---,---,---,---,---,---,---,---,---] Inserting 33  Probes: 1
+[ 33,  0,---,---,---,---,---,---,---,---,---] Inserting 0  Probes: 2
+[ 33,  0,---,---,---,---,---,---,---,---,---] Updating 0  Probes: 2
+[ 33,  0, 13,---,---,---,---,---,---,---,---] Inserting 13  Probes: 1
+[ 33,  0, 13, 47,---,---,---,---,---,---,---] Inserting 47  Probes: 1
+[ 33,  0, 13, 47, 78,---,---,---,---,---,---] Inserting 78  Probes: 4
+[ 33,  0, 13, 47, 78, 45,---,---,---,---,---] Inserting 45  Probes: 5
+Inserted 7 values, 6 distinct in 4 ms
+Average no. of probes: 2.2857142857142856 Longest probe: 5
+Searching
+Unsuccessful search for 40 in 1 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 33,---,---,---,---,---,---,---,---,---,---] Inserting 33  Probes: 1
+[ 33,  0,---,---,---,---,---,---,---,---,---] Inserting 0  Probes: 2
+[ 33,  0,---,---,---,---,---,---,---,---,---] Updating 0  Probes: 2
+[ 33,  0, 13,---,---,---,---,---,---,---,---] Inserting 13  Probes: 1
+[ 33,  0, 13, 47,---,---,---,---,---,---,---] Inserting 47  Probes: 1
+[ 33,  0, 13, 47,---,---,---,---, 78,---,---] Inserting 78  Probes: 3
+[ 33,  0, 13, 47,---,---,---,---, 78,---, 45] Inserting 45  Probes: 4
+Inserted 7 values, 6 distinct in 4 ms
+Average no. of probes: 2.0 Longest probe: 4
+Searching
+Unsuccessful search for 40 in 1 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[ 33,---,---,---,---,---,---,---,---,---,---] Inserting 33  Probes: 1
+[ 33,  0,---,---,---,---,---,---,---,---,---] Inserting 0  Probes: 2
+[ 33,  0,---,---,---,---,---,---,---,---,---] Updating 0  Probes: 2
+[ 33,  0, 13,---,---,---,---,---,---,---,---] Inserting 13  Probes: 1
+[ 33,  0, 13, 47,---,---,---,---,---,---,---] Inserting 47  Probes: 1
+[ 33,  0, 13, 47,---,---,---,---,---,---, 78] Inserting 78  Probes: 2
+[ 33,  0, 13, 47,---,---,---, 45,---,---, 78] Inserting 45  Probes: 2
+Inserted 7 values, 6 distinct in 6 ms
+Average no. of probes: 1.5714285714285714 Longest probe: 3
+Searching
+Unsuccessful search for 40 in 2 probes
+
+----------------------------------------------------------------------
+Keys: 6,62,38,80,86,1,26
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---,  6,---,---,---,---] Inserting 6  Probes: 1
+[---,---,---,---,---,---,  6, 62,---,---,---] Inserting 62  Probes: 1
+[---,---,---,---,---, 38,  6, 62,---,---,---] Inserting 38  Probes: 1
+[---,---,---, 80,---, 38,  6, 62,---,---,---] Inserting 80  Probes: 1
+[---,---,---, 80,---, 38,  6, 62,---, 86,---] Inserting 86  Probes: 1
+[---,  1,---, 80,---, 38,  6, 62,---, 86,---] Inserting 1  Probes: 1
+[---,  1,---, 80, 26, 38,  6, 62,---, 86,---] Inserting 26  Probes: 1
+Inserted 7 values, 7 distinct in 23 ms
+Average no. of probes: 1.0 Longest probe: 5
+Searching
+Unsuccessful search for 55 in 1 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---,  6,---,---,---,---] Inserting 6  Probes: 1
+[---,---,---,---,---,---,  6, 62,---,---,---] Inserting 62  Probes: 1
+[---,---,---,---,---, 38,  6, 62,---,---,---] Inserting 38  Probes: 1
+[---,---,---, 80,---, 38,  6, 62,---,---,---] Inserting 80  Probes: 1
+[---,---,---, 80,---, 38,  6, 62,---, 86,---] Inserting 86  Probes: 1
+[---,  1,---, 80,---, 38,  6, 62,---, 86,---] Inserting 1  Probes: 1
+[---,  1,---, 80, 26, 38,  6, 62,---, 86,---] Inserting 26  Probes: 1
+Inserted 7 values, 7 distinct in 3 ms
+Average no. of probes: 1.0 Longest probe: 4
+Searching
+Unsuccessful search for 55 in 1 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---,  6,---,---,---,---] Inserting 6  Probes: 1
+[---,---,---,---,---,---,  6, 62,---,---,---] Inserting 62  Probes: 1
+[---,---,---,---,---, 38,  6, 62,---,---,---] Inserting 38  Probes: 1
+[---,---,---, 80,---, 38,  6, 62,---,---,---] Inserting 80  Probes: 1
+[---,---,---, 80,---, 38,  6, 62,---, 86,---] Inserting 86  Probes: 1
+[---,  1,---, 80,---, 38,  6, 62,---, 86,---] Inserting 1  Probes: 1
+[---,  1,---, 80, 26, 38,  6, 62,---, 86,---] Inserting 26  Probes: 1
+Inserted 7 values, 7 distinct in 5 ms
+Average no. of probes: 1.0 Longest probe: 3
+Searching
+Unsuccessful search for 55 in 1 probes
+
+----------------------------------------------------------------------
+Keys: 86,60,50,59,62,15,44
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---,---,---,---, 86,---] Inserting 86  Probes: 1
+[---,---,---,---,---, 60,---,---,---, 86,---] Inserting 60  Probes: 1
+[---,---,---,---,---, 60, 50,---,---, 86,---] Inserting 50  Probes: 1
+[---,---,---,---, 59, 60, 50,---,---, 86,---] Inserting 59  Probes: 1
+[---,---,---,---, 59, 60, 50, 62,---, 86,---] Inserting 62  Probes: 1
+[---,---,---,---, 59, 60, 50, 62, 15, 86,---] Inserting 15  Probes: 5
+[ 44,---,---,---, 59, 60, 50, 62, 15, 86,---] Inserting 44  Probes: 1
+Inserted 7 values, 7 distinct in 9 ms
+Average no. of probes: 1.5714285714285714 Longest probe: 5
+Searching
+Unsuccessful search for 43 in 1 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---,---,---,---, 86,---] Inserting 86  Probes: 1
+[---,---,---,---,---, 60,---,---,---, 86,---] Inserting 60  Probes: 1
+[---,---,---,---,---, 60, 50,---,---, 86,---] Inserting 50  Probes: 1
+[---,---,---,---, 59, 60, 50,---,---, 86,---] Inserting 59  Probes: 1
+[---,---,---,---, 59, 60, 50, 62,---, 86,---] Inserting 62  Probes: 1
+[ 15,---,---,---, 59, 60, 50, 62,---, 86,---] Inserting 15  Probes: 3
+[ 15, 44,---,---, 59, 60, 50, 62,---, 86,---] Inserting 44  Probes: 2
+Inserted 7 values, 7 distinct in 7 ms
+Average no. of probes: 1.4285714285714286 Longest probe: 4
+Searching
+Unsuccessful search for 43 in 1 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---,---,---,---, 86,---] Inserting 86  Probes: 1
+[---,---,---,---,---, 60,---,---,---, 86,---] Inserting 60  Probes: 1
+[---,---,---,---,---, 60, 50,---,---, 86,---] Inserting 50  Probes: 1
+[---,---,---,---, 59, 60, 50,---,---, 86,---] Inserting 59  Probes: 1
+[---,---,---,---, 59, 60, 50, 62,---, 86,---] Inserting 62  Probes: 1
+[---,---,---,---, 59, 60, 50, 62,---, 86, 15] Inserting 15  Probes: 2
+[ 44,---,---,---, 59, 60, 50, 62,---, 86, 15] Inserting 44  Probes: 1
+Inserted 7 values, 7 distinct in 7 ms
+Average no. of probes: 1.1428571428571428 Longest probe: 3
+Searching
+Unsuccessful search for 43 in 2 probes
+
+----------------------------------------------------------------------
+Keys: 81,76,82,74,79,88,17
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---, 81,---,---,---,---,---,---] Inserting 81  Probes: 1
+[---,---,---,---, 81,---,---,---,---,---, 76] Inserting 76  Probes: 1
+[---,---,---,---, 81, 82,---,---,---,---, 76] Inserting 82  Probes: 1
+[---,---,---,---, 81, 82,---,---, 74,---, 76] Inserting 74  Probes: 1
+[---,---, 79,---, 81, 82,---,---, 74,---, 76] Inserting 79  Probes: 1
+[ 88,---, 79,---, 81, 82,---,---, 74,---, 76] Inserting 88  Probes: 1
+[ 88,---, 79,---, 81, 82, 17,---, 74,---, 76] Inserting 17  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.0 Longest probe: 5
+Searching
+Unsuccessful search for 24 in 2 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---, 81,---,---,---,---,---,---] Inserting 81  Probes: 1
+[---,---,---,---, 81,---,---,---,---,---, 76] Inserting 76  Probes: 1
+[---,---,---,---, 81, 82,---,---,---,---, 76] Inserting 82  Probes: 1
+[---,---,---,---, 81, 82,---,---, 74,---, 76] Inserting 74  Probes: 1
+[---,---, 79,---, 81, 82,---,---, 74,---, 76] Inserting 79  Probes: 1
+[ 88,---, 79,---, 81, 82,---,---, 74,---, 76] Inserting 88  Probes: 1
+[ 88,---, 79,---, 81, 82, 17,---, 74,---, 76] Inserting 17  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.0 Longest probe: 4
+Searching
+Unsuccessful search for 24 in 2 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---, 81,---,---,---,---,---,---] Inserting 81  Probes: 1
+[---,---,---,---, 81,---,---,---,---,---, 76] Inserting 76  Probes: 1
+[---,---,---,---, 81, 82,---,---,---,---, 76] Inserting 82  Probes: 1
+[---,---,---,---, 81, 82,---,---, 74,---, 76] Inserting 74  Probes: 1
+[---,---, 79,---, 81, 82,---,---, 74,---, 76] Inserting 79  Probes: 1
+[ 88,---, 79,---, 81, 82,---,---, 74,---, 76] Inserting 88  Probes: 1
+[ 88,---, 79,---, 81, 82, 17,---, 74,---, 76] Inserting 17  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.0 Longest probe: 3
+Searching
+Unsuccessful search for 24 in 2 probes
+
+----------------------------------------------------------------------
+Keys: 56,17,54,16,87,84,78
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---, 56,---,---,---,---,---,---,---,---,---] Inserting 56  Probes: 1
+[---, 56,---,---,---,---, 17,---,---,---,---] Inserting 17  Probes: 1
+[---, 56,---,---,---,---, 17,---,---,---, 54] Inserting 54  Probes: 1
+[---, 56,---,---,---, 16, 17,---,---,---, 54] Inserting 16  Probes: 1
+[ 87, 56,---,---,---, 16, 17,---,---,---, 54] Inserting 87  Probes: 2
+[ 87, 56,---,---,---, 16, 17, 84,---,---, 54] Inserting 84  Probes: 1
+[ 87, 56, 78,---,---, 16, 17, 84,---,---, 54] Inserting 78  Probes: 2
+Inserted 7 values, 7 distinct in 3 ms
+Average no. of probes: 1.2857142857142858 Longest probe: 5
+Searching
+Unsuccessful search for 97 in 1 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---, 56,---,---,---,---,---,---,---,---,---] Inserting 56  Probes: 1
+[---, 56,---,---,---,---, 17,---,---,---,---] Inserting 17  Probes: 1
+[---, 56,---,---,---,---, 17,---,---,---, 54] Inserting 54  Probes: 1
+[---, 56,---,---,---, 16, 17,---,---,---, 54] Inserting 16  Probes: 1
+[ 87, 56,---,---,---, 16, 17,---,---,---, 54] Inserting 87  Probes: 2
+[ 87, 56,---,---,---, 16, 17, 84,---,---, 54] Inserting 84  Probes: 1
+[ 87, 56, 78,---,---, 16, 17, 84,---,---, 54] Inserting 78  Probes: 2
+Inserted 7 values, 7 distinct in 3 ms
+Average no. of probes: 1.2857142857142858 Longest probe: 4
+Searching
+Unsuccessful search for 97 in 1 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---, 56,---,---,---,---,---,---,---,---,---] Inserting 56  Probes: 1
+[---, 56,---,---,---,---, 17,---,---,---,---] Inserting 17  Probes: 1
+[---, 56,---,---,---,---, 17,---,---,---, 54] Inserting 54  Probes: 1
+[---, 56,---,---,---, 16, 17,---,---,---, 54] Inserting 16  Probes: 1
+[---, 56,---,---,---, 16, 17, 87,---,---, 54] Inserting 87  Probes: 2
+[ 84, 56,---,---,---, 16, 17, 87,---,---, 54] Inserting 84  Probes: 4
+[ 84, 56,---,---,---, 16, 17, 87, 78,---, 54] Inserting 78  Probes: 3
+Inserted 7 values, 7 distinct in 3 ms
+Average no. of probes: 1.8571428571428572 Longest probe: 4
+Searching
+Unsuccessful search for 97 in 1 probes
+
+----------------------------------------------------------------------
+Keys: 34,62,14,48,99,94,10
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---, 34,---,---,---,---,---,---,---,---,---] Inserting 34  Probes: 1
+[---, 34,---,---,---,---,---, 62,---,---,---] Inserting 62  Probes: 1
+[---, 34,---, 14,---,---,---, 62,---,---,---] Inserting 14  Probes: 1
+[---, 34,---, 14, 48,---,---, 62,---,---,---] Inserting 48  Probes: 1
+[ 99, 34,---, 14, 48,---,---, 62,---,---,---] Inserting 99  Probes: 1
+[ 99, 34,---, 14, 48,---, 94, 62,---,---,---] Inserting 94  Probes: 1
+[ 99, 34,---, 14, 48,---, 94, 62,---,---, 10] Inserting 10  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.0 Longest probe: 5
+Searching
+Unsuccessful search for 55 in 3 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---, 34,---,---,---,---,---,---,---,---,---] Inserting 34  Probes: 1
+[---, 34,---,---,---,---,---, 62,---,---,---] Inserting 62  Probes: 1
+[---, 34,---, 14,---,---,---, 62,---,---,---] Inserting 14  Probes: 1
+[---, 34,---, 14, 48,---,---, 62,---,---,---] Inserting 48  Probes: 1
+[ 99, 34,---, 14, 48,---,---, 62,---,---,---] Inserting 99  Probes: 1
+[ 99, 34,---, 14, 48,---, 94, 62,---,---,---] Inserting 94  Probes: 1
+[ 99, 34,---, 14, 48,---, 94, 62,---,---, 10] Inserting 10  Probes: 1
+Inserted 7 values, 7 distinct in 5 ms
+Average no. of probes: 1.0 Longest probe: 4
+Searching
+Unsuccessful search for 55 in 4 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---, 34,---,---,---,---,---,---,---,---,---] Inserting 34  Probes: 1
+[---, 34,---,---,---,---,---, 62,---,---,---] Inserting 62  Probes: 1
+[---, 34,---, 14,---,---,---, 62,---,---,---] Inserting 14  Probes: 1
+[---, 34,---, 14, 48,---,---, 62,---,---,---] Inserting 48  Probes: 1
+[ 99, 34,---, 14, 48,---,---, 62,---,---,---] Inserting 99  Probes: 1
+[ 99, 34,---, 14, 48,---, 94, 62,---,---,---] Inserting 94  Probes: 1
+[ 99, 34,---, 14, 48,---, 94, 62,---,---, 10] Inserting 10  Probes: 1
+Inserted 7 values, 7 distinct in 3 ms
+Average no. of probes: 1.0 Longest probe: 4
+Searching
+Unsuccessful search for 55 in 5 probes
+
+----------------------------------------------------------------------
+Keys: 28,30,64,34,9,59,14
+
+Linear Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---, 28,---,---,---,---] Inserting 28  Probes: 1
+[---,---,---,---,---,---, 28,---, 30,---,---] Inserting 30  Probes: 1
+[---,---,---,---,---,---, 28,---, 30, 64,---] Inserting 64  Probes: 1
+[---, 34,---,---,---,---, 28,---, 30, 64,---] Inserting 34  Probes: 1
+[---, 34,---,---,---,---, 28,---, 30, 64,  9] Inserting 9  Probes: 2
+[---, 34,---,---, 59,---, 28,---, 30, 64,  9] Inserting 59  Probes: 1
+[---, 34,---, 14, 59,---, 28,---, 30, 64,  9] Inserting 14  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.1428571428571428 Longest probe: 5
+Searching
+Unsuccessful search for 12 in 2 probes
+
+Quadratic Probing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---, 28,---,---,---,---] Inserting 28  Probes: 1
+[---,---,---,---,---,---, 28,---, 30,---,---] Inserting 30  Probes: 1
+[---,---,---,---,---,---, 28,---, 30, 64,---] Inserting 64  Probes: 1
+[---, 34,---,---,---,---, 28,---, 30, 64,---] Inserting 34  Probes: 1
+[---, 34,---,---,---,---, 28,---, 30, 64,  9] Inserting 9  Probes: 2
+[---, 34,---,---, 59,---, 28,---, 30, 64,  9] Inserting 59  Probes: 1
+[---, 34,---, 14, 59,---, 28,---, 30, 64,  9] Inserting 14  Probes: 1
+Inserted 7 values, 7 distinct in 3 ms
+Average no. of probes: 1.1428571428571428 Longest probe: 4
+Searching
+Unsuccessful search for 12 in 2 probes
+
+Double Hashing
+[---,---,---,---,---,---,---,---,---,---,---]
+[---,---,---,---,---,---, 28,---,---,---,---] Inserting 28  Probes: 1
+[---,---,---,---,---,---, 28,---, 30,---,---] Inserting 30  Probes: 1
+[---,---,---,---,---,---, 28,---, 30, 64,---] Inserting 64  Probes: 1
+[---, 34,---,---,---,---, 28,---, 30, 64,---] Inserting 34  Probes: 1
+[---, 34,---,---,---,---, 28,  9, 30, 64,---] Inserting 9  Probes: 3
+[---, 34,---,---, 59,---, 28,  9, 30, 64,---] Inserting 59  Probes: 1
+[---, 34,---, 14, 59,---, 28,  9, 30, 64,---] Inserting 14  Probes: 1
+Inserted 7 values, 7 distinct in 4 ms
+Average no. of probes: 1.2857142857142858 Longest probe: 4
+Searching
+Unsuccessful search for 12 in 4 probes
